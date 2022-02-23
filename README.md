@@ -1,5 +1,5 @@
-# cookie
-cookie 封装
+# cache
+cache 3种常用缓存封装
 
 增删改查+设有效期：
 ```
