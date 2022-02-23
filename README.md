@@ -3,11 +3,11 @@ cache 3种常用缓存封装
 
 增删改查+设有效期：
 ```
-    setCookie("test","tank",1800);   //设置cookie的值，生存时间半个小时-1800分钟
-    alert(getCookie('test'));        //取得cookie的值，显示tank
-    clearCookie("test");             //删除cookie的值
-    alert(getCookie('test'));        //test对应的cookie值为空，显示为false.就是getCookie最后返的false值。
-    clearAllCookies();               //清除所有cookie
+     setCookie("test","tank",1800);   //设置cookie的值，生存时间半个小时-1800分钟
+     alert(getCookie('test'));        //取得cookie的值，显示tank
+     clearCookie("test");             //删除cookie的值
+     alert(getCookie('test'));        //test对应的cookie值为空，显示为false.就是getCookie最后返的false值。
+     clearAllCookies();               //清除所有cookie
 ```
 
 localStorag：
