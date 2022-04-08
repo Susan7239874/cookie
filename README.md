@@ -1,6 +1,6 @@
 # cache
-cache 3种常用缓存封装
-
+cache 3种常用缓存封装  
+-cache.js:  
 增删改查+设有效期：
 ```
      setCookie("test","tank",1800);   //设置cookie的值，生存时间半个小时-1800分钟
@@ -26,4 +26,26 @@ sessionStorage:
     _session.set('access_token', '123456');
     alert(_session.get('access_token'));
     ......
+```
+
+-vcache.js:[是vue-cli专门响应式修改localStorage的方法]  
+使用：
+```
+import '@/xxxx/vcache.js';
+export default {
+...
+   data(){
+     return{
+        //在data中可自动响应，缓存修改后这里会自动更新
+        count:localStorage.getItem('count')//取，变量名和缓存名必须一样，这都是count
+    }
+  },
+  methods:{
+   click:function(){
+    localStorage.setItem('count',56);//存
+}
+}
+...
+}
+
 ```
